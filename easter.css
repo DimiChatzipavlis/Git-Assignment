@@ -1,13 +1,13 @@
 body {
-    background-color: #8B0000;
+    background-color: #cadb33;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 .egg {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 130px;
-    background: linear-gradient(45deg, #ff9ecd, #ffcce6);
+    background: linear-gradient(45deg, #345439, #075d35);
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     margin: 10px;
     cursor: pointer;
@@ -17,7 +17,7 @@ body {
     display: inline-block;
     width: 100px;
     height: 130px;
-    background: linear-gradient(45deg, #3e4125, #d11e1e);
+    background: linear-gradient(45deg, #1a3d2b, #25850a);
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     margin: 10px;
     cursor: pointer;
@@ -25,9 +25,9 @@ body {
 }
 .egg {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 130px;
-    background: linear-gradient(45deg, #5560a1, #ffcce6);
+    background: linear-gradient(45deg, #057742, #124b27);
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     margin: 10px;
     cursor: pointer;
