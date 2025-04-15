@@ -18,11 +18,21 @@
     <div id="secretBunny">🐰</div>
 
     <script>
-        // Easter egg: Konami code reveals rainbow background
+        // Easter egg: KANGAROO code reveals rainbow background
         let keys = [];
+        const cheatCode = ['K', 'A', 'N', 'G', 'A', 'R', 'O', 'O']; // Define the cheat code sequence
+    
         document.addEventListener('keydown', (e) => {
-            keys.push(e.key);
-            if (keys.join(',').includes('ArrowUp,ArrowUp,ArrowDown,ArrowDown')) {
+            // Add the pressed key (uppercase) to our array
+            keys.push(e.key.toUpperCase());
+    
+            // Keep the keys array only as long as the cheat code
+            // Slice from the end to get the most recent keys
+            keys = keys.slice(-cheatCode.length);
+    
+            // Check if the recent keys match the cheat code
+            if (keys.join('') === cheatCode.join('')) {
+                // Apply the gradient (already updated in the previous commit)
                 document.body.style.background = 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)';
             }
         });
