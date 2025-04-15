@@ -13,7 +13,7 @@
     <div class="egg" onclick="document.getElementById('secretBunny').style.display='block'"></div>
     <div class="egg" onclick="this.style.background='rainbow'"></div>
 
-    <p class="hidden-basket">🧺 Secret Easter Basket Found! 🧺</p>
+    <p class="hidden-basket">🕯 Secret Easter Basket Found! 🕯</p>
     
     <div id="secretBunny">🐰</div>
 
@@ -23,17 +23,6 @@
         const cheatCode = ['K', 'A', 'N', 'G', 'A', 'R', 'O', 'O']; // Define the cheat code sequence
     
         document.addEventListener('keydown', (e) => {
-            // Add the pressed key (uppercase) to our array
-            keys.push(e.key.toUpperCase());
-    
-            // Keep the keys array only as long as the cheat code
-            // Slice from the end to get the most recent keys
-            keys = keys.slice(-cheatCode.length);
-    
-            // Check if the recent keys match the cheat code
-            if (keys.join('') === cheatCode.join('')) {
-                // Apply the gradient (already updated in the previous commit)
-                document.body.style.background = 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)';
             }
         });
     </script>
